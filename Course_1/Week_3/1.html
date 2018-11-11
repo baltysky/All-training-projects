@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function createObject(z) {
+			_value=z;
+			
+    	return {
+    		get value(){
+				return _value;
+			},
+       first: function (x) {
+       		_value+=x;
+       		alert(_value)
+           return this;
+       },
+       second: function (y) {
+       		_value-=y;
+       		alert(_value);
+           return this;
+       }
+       
+       
+   	}
+
+}
+
+		var t=createObject(10).first(3).first(4).second(2);
+		alert(t.value+"~");
+	</script>
+</body>
+</html>

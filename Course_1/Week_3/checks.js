@@ -4,19 +4,14 @@ var assert = require('assert');
 // Подключаем свою функцию
 var date = require('./index.js');
 
-var time = date('2017-05-16 13:45')
-    .add(24, 'hours')
-    .subtract(1, 'months')
-    .add(3, 'days')
-    .add(15, 'minutes');
-assert.deepEqual(
-    time.value,
-    '2017-04-20 14:00',
+var time = date('2016-04-26 15:00').add(5,"days");
+console.log(time.value+"~1");
+var time = date('2016-05-01 15:00').subtract(5,"days");
+console.log(time.value+"~2");
 
-    'Если к дате "2017-05-16 13:45" ' +
-    'прибавить 24 часа, 3 дня и 15 минут, вычесть 1 месяц, ' +
-    'то получится "2017-04-20 14:00"'
-);
+    
+    
+
 
 // assert.throws принимает функцию и
 // проверяет, что она выбрасывает исключение определенного типа

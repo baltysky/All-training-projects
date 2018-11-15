@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1542271420 source:c:\dev\task_04\main.cpp
+	<iostream>
+	"worker.h"
+
+1542272119 c:\dev\task_04\include\worker.h
+	<string>
+
